@@ -31,11 +31,7 @@
       margin-left: auto;
       margin-right: auto;
   }
-  pre {
-    font-family: 'CircleFont', 'Noto Sans JP', serif;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
+
   td,
   th {
       border: 1px solid white;
@@ -159,6 +155,7 @@
     <div class="col-md-12 twenty">
     This assignment gave me a very interesting first experience with text-to-video generation. I used ComfyUI, which is one of the most complete tools currently available for personal use, together with open-source models from Civitai. By connecting different nodes and modules step by step, I was able to build a workflow and generate video content on my own. The whole process felt very cool because it was not just pressing one button, but actually creating something through my own design and adjustments.
     </div>
+    </div>
   </div>
 
   <!-- ------------------------------------------------>
@@ -208,35 +205,86 @@
   </div>
   
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty" style="background-color:#ff0000;">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
       <figcaption>生成角色的圖片 - 1</figcaption>
       <img src="GIF_00001.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="GIF_00002.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="GIF_00003.png"  width="100%"><br>
     </div>
   </div>
 
   
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty" style="background-color:#7030a0;">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
       <figcaption>生成完整角色動畫 - 1</figcaption>
       <img src="GIF_00001.gif" width="100%"><br>
-      <p>使用提示詞:</p>
-      <pre>
-"0" :"cute girl, spring day, floral skirt, wind, hair accessories, sweet smile",
-"10" :"cute girl, spring day, floral skirt, wind, hair accessories, sweet smile",
-"20" :"cute girl, spring day, floral skirt, wind, hair accessories, sweet smile",
-"30" :"cute girl, summer day, short-sleeved dress, straw hat, cheerful expression",
-"40" :"cute girl, summer day, short-sleeved dress, straw hat, cheerful expression",
-"50" :"cute girl, summer day, short-sleeved dress, straw hat, cheerful expression",
-"60" :"cute girl, fall day, sweater, slim jeans, wind, fallen leaves, warm smile",
-"70" :"cute girl, fall day, sweater, slim jeans, wind, fallen leaves, warm smile",
-"80" :"cute girl, fall day, sweater, slim jeans, wind, fallen leaves, warm smile",
-"90" :"cute girl, winter, down jacket, woolen hat, ear protection gloves, snowflakes, cozy smile",
-"100" :"cute girl, winter, down jacket, woolen hat, ear protection gloves, snowflakes, cozy smile",
-"110" :"cute girl, winter, down jacket, woolen hat, ear protection gloves, snowflakes, cozy smile"
-      </pre>
+      <td> 使用提示詞:
+      "0" :"cute girl, spring day, floral skirt, wind, hair accessories, sweet smile",
+      "10" :"cute girl, spring day, floral skirt, wind, hair accessories, sweet smile",
+      "20" :"cute girl, spring day, floral skirt, wind, hair accessories, sweet smile",
+      "30" :"cute girl, summer day, short-sleeved dress, straw hat, cheerful expression",
+      "40" :"cute girl, summer day, short-sleeved dress, straw hat, cheerful expression",
+      "50" :"cute girl, summer day, short-sleeved dress, straw hat, cheerful expression",
+      "60" :"cute girl, fall day, sweater, slim jeans, wind, fallen leaves, warm smile",
+      "70" :"cute girl, fall day, sweater, slim jeans, wind, fallen leaves, warm smile",
+      "80" :"cute girl, fall day, sweater, slim jeans, wind, fallen leaves, warm smile",
+      "90" :"cute girl, winter, down jacket, woolen hat, ear protection gloves, snowflakes, cozy smile",
+      "100" :"cute girl, winter, down jacket, woolen hat, ear protection gloves, snowflakes, cozy smile",
+      "110" :"cute girl, winter, down jacket, woolen hat, ear protection gloves, snowflakes, cozy smile"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="GIF_00002.gif" width="100%"><br>
+      <td> 使用提示詞:
+      "0" :"fashion model, spring garden, flowing dress, ribbon hair clip, soft breeze",
+      "10" :"fashion model, spring garden, flowing dress, ribbon hair clip, soft breeze",
+      "20" :"fashion model, spring garden, flowing dress, ribbon hair clip, soft breeze",
+      "30" :"fashion model, summer beach, sleeveless dress, sun hat, ocean breeze",
+      "40" :"fashion model, summer beach, sleeveless dress, sun hat, ocean breeze",
+      "50" :"fashion model, summer beach, sleeveless dress, sun hat, ocean breeze",
+      "60" :"fashion model, autumn street, knit sweater, long skirt, falling leaves",
+      "70" :"fashion model, autumn street, knit sweater, long skirt, falling leaves",
+      "80" :"fashion model, autumn street, knit sweater, long skirt, falling leaves",
+      "90" :"fashion model, winter city, wool coat, scarf, beret, light snow",
+      "100" :"fashion model, winter city, wool coat, scarf, beret, light snow",
+      "110" :"fashion model, winter city, wool coat, scarf, beret, light snow"
+
+          <br><br>
+          使用負面提示詞:
+          (bad quality, worst quality:1.2), sheer, transparent, translucent, revealing)
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="GIF_00003.gif" width="100%"><br>
+      <td> 使用提示詞:
+      "0" :"confident woman, spring day, fitted floral dress, soft wind, elegant hair accessories, charming smile",
+      "10" :"confident woman, spring day, fitted floral dress, soft wind, elegant hair accessories, charming smile",
+      "20" :"confident woman, spring day, fitted floral dress, soft wind, elegant hair accessories, charming smile",
+      "30" :"confident woman, summer day, off-shoulder midi dress, straw hat, sunlit skin, relaxed expression",
+      "40" :"confident woman, summer day, off-shoulder midi dress, straw hat, sunlit skin, relaxed expression",
+      "50" :"confident woman, summer day, off-shoulder midi dress, straw hat, sunlit skin, relaxed expression",
+      "60" :"confident woman, fall day, fitted sweater, slim jeans, wind, fallen leaves, alluring smile",
+      "70" :"confident woman, fall day, fitted sweater, slim jeans, wind, fallen leaves, alluring smile",
+      "80" :"confident woman, fall day, fitted sweater, slim jeans, wind, fallen leaves, alluring smile",
+      "90" :"confident woman, winter, stylish down coat, wool hat, leather gloves, snowflakes, graceful pose",
+      "100" :"confident woman, winter, stylish down coat, wool hat, leather gloves, snowflakes, graceful pose",
+      "110" :"confident woman, winter, stylish down coat, wool hat, leather gloves, snowflakes, graceful pose"
+
+      </td>
     </div>
   </div>
-  
+  <!-- ------------------------------------------------>
+  <!-- ------------------------------------------------>
+
+  <!-- ------------------------------------------------>
 
 
 <script>
